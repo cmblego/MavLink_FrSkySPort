@@ -154,7 +154,7 @@ local function decodeApmStatusText(textnr)
 	elseif textnr == 31 then ret.text="EKF variance"
 	elseif textnr == 125 then ret.text="DCM bad heading"
 	
-	elseif textnr == 32 then ret.text="Low Battery!"
+	elseif textnr == 32 then ret.text="Low Battery!"; ret.soundfile="beep.wav"
 	elseif textnr == 33 then ret.text="Lost GPS!"
 	
 	elseif textnr == 34 then ret.text="Trim saved"
